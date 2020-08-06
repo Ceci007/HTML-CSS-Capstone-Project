@@ -6,10 +6,61 @@
     <title>Academy - Find the right course for you</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2d6ecfbd70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="./img/logo.png" alt="logo" >
+            </div>
+            <nav class="navbar-nav">
+                <div class="navbar-nav__toggle">
+                    <button class="toggle">
+                        <input type="checkbox" class="toggle__checkbox" id="nav-toggle" />
+                        <label for="nav-toggle" class="toggle__button">
+                            <span class="toggle__icon" ></span>
+                        </label>
+                        <div class="toggle__background" ></div>
+                        <nav class="toggle__nav">
+                            <a href="index.html"><div class="toggle__link">home</div></a>
+                            <a href="html/search-results.html"><div class="toggle__link"><i class="fas fa-search"></i> Courses</div></a>
+                            <a href="html/contact.html"><div class="toggle__link">contact</div></a>
+                            <a href="html/login.html"><div class="toggle__link">Login</div></a>
+                        </nav>
+                    </button>
+                </div>
+                <a href="index.html">
+                    <div class="navbar-nav__nav-item">
+                        home
+                    </div>
+                </a>
+                <a href="html/search-results.html">
+                    <div class="navbar-nav__nav-item">
+                        <i class="fas fa-search"></i> Courses
+                    </div>
+                </a>
+                <a href="html/contact.html">
+                    <div class="navbar-nav__nav-item">
+                        contact
+                    </div>
+                </a>
+                <a href="html/login.html">
+                    <div class="navbar-nav__nav-item">
+                        login
+                    </div>
+                </a>
+            </nav>
+        </div>
+
+        <!--
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search hotels" />
+                <button class="search__button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        -->
     </div>
 </body>
 </html>
