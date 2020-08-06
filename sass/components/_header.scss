@@ -1,3 +1,7 @@
+$bp-large: 64em;                    // 1024px
+$bp-medium: 48em;                     // 768px
+$bp-small: 31.25em;                 // 500px
+
 .header-box {
     display: grid;
     grid-template-rows: 100vh;
@@ -6,17 +10,13 @@
 
     
   @media only screen and (max-width: $bp-medium) {
-    & {
-      display: grid;
-      grid-template-rows: 80vh;
-    }
+    display: grid;
+    grid-template-rows: 80vh;
   }
 
   @media only screen and (max-width: $bp-small) {
-    & {
-      display: grid;
-      grid-template-rows: 60vh;
-    } 
+    display: grid;
+    grid-template-rows: 60vh; 
   }
 }
 
