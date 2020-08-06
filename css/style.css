@@ -31,20 +31,30 @@ body {
   color: var(--color-grey-dark-3);
   overflow-x: hidden; }
 
-/*
-@import "components/buttons";
-@import "components/description";
-@import "components/main-flex";
-@import "components/reviews";
-@import "components/sidenavigation";
-@import "components/header";
-@import "components/fixed-image";
-@import "components/cards";
-@import "components/features";
-@import "components/gallery";
-@import "components/footer";
-@import "components/scrollbar";
-*/
+.heading-1 {
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-family: inherit;
+  font-weight: 100; }
+  @media only screen and (max-width: 48em) {
+    .heading-1 {
+      font-size: 3rem;
+      text-align: center; } }
+  @media only screen and (max-width: 31.25em) {
+    .heading-1 {
+      font-size: 2rem; } }
+
+.heading-3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  font-weight: 700; }
+  @media only screen and (max-width: 48em) {
+    .heading-3 {
+      text-align: center; } }
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -199,3 +209,96 @@ body {
   .toggle__checkbox:checked ~ .toggle__button .toggle__icon:after {
     top: 0;
     transform: rotate(-135deg); }
+
+.header-box {
+  display: grid;
+  grid-template-rows: 100vh;
+  max-width: 100%;
+  width: 100%; }
+  @media only screen and (max-width: 48em) {
+    .header-box {
+      display: grid;
+      grid-template-rows: 80vh; } }
+  @media only screen and (max-width: 31.25em) {
+    .header-box {
+      display: grid;
+      grid-template-rows: 60vh; } }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://github.com/Ceci007/image-repository/blob/master/img/header-bg.jpg?raw=true");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+  position: relative;
+  margin-top: 7.5rem; }
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
+
+.text {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-right: 2.25rem; }
+  .text__input {
+    font-family: inherit;
+    font-size: 1.7rem;
+    color: var(--color-grey-dark-1);
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: .4rem;
+    box-shadow: var(--shadow-dark);
+    width: 70%;
+    transition: all .3s;
+    margin-right: -6.5rem; }
+    .text__input:focus {
+      outline: none;
+      width: 90%;
+      background-color: var(--color-grey-light-3); }
+    .text__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-dark-1); }
+  .text__input:focus ~ .text__button {
+    background-color: var(--color-grey-light-3); }
+  .text__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+    border-left: 2px solid var(--color-grey-dark-1);
+    cursor: pointer; }
+    .text__button:focus {
+      outline: none; }
+    .text__button:active {
+      transform: translateY(0.2rem); }
+    .text__button i {
+      color: var(--color-grey-dark-1);
+      font-size: 2.5rem;
+      margin-left: 1.5rem; }
+
+/*
+@import "components/buttons";
+@import "components/description";
+@import "components/main-flex";
+@import "components/reviews";
+@import "components/sidenavigation";
+@import "components/header";
+@import "components/fixed-image";
+@import "components/cards";
+@import "components/features";
+@import "components/gallery";
+@import "components/footer";
+@import "components/scrollbar";
+*/

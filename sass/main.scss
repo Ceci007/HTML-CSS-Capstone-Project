@@ -6,6 +6,12 @@
 @import "base/typography";
 @import "base/utils";
 
+@import "layout/containers";
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "components/header";
+
 /*
 @import "components/buttons";
 @import "components/description";
@@ -20,9 +26,5 @@
 @import "components/footer";
 @import "components/scrollbar";
 */ 
-
-@import "layout/containers";
-@import "layout/navigation";
-@import "layout/footer";
 
 @import "pages/home";
