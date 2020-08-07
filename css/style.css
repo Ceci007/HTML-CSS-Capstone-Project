@@ -647,6 +647,14 @@ body {
   display: flex;
   padding: 3rem 2rem;
   align-items: flex-end; }
+  @media only screen and (max-width: 64em) {
+    .form {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+  @media only screen and (max-width: 64em) {
+    .form__item {
+      margin-bottom: 2rem; } }
   .form__item:not(:last-of-type) {
     margin-right: 3.5rem; }
   .form__item h4 {
@@ -658,6 +666,9 @@ body {
     background-color: white;
     border-radius: 5px;
     padding: 1rem 2rem; }
+    @media only screen and (max-width: 64em) {
+      .form__input {
+        width: 19rem; } }
 
 .select__wrap {
   width: 22.5rem;
@@ -684,6 +695,10 @@ body {
     border-color: transparent transparent #555555 #555555;
     transform: rotate(-45deg); }
 
+.buttons-box {
+  display: flex;
+  justify-content: center; }
+
 .search-button:link, .search-button:visited {
   text-decoration: none;
   font-size: 1.4rem;
@@ -693,13 +708,26 @@ body {
   font-weight: 600;
   border-radius: 4px;
   display: flex;
+  justify-content: center;
   align-self: center; }
+  .search-button:link i, .search-button:visited i {
+    margin-right: 1rem; }
 
 .color--1 {
   background-color: var(--color-primary); }
 
 .color--2 {
-  background-color: var(--color-secondary); }
+  background-color: var(--color-secondary);
+  width: 16rem; }
+
+.items-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 64em) {
+    .items-box {
+      margin-bottom: 2rem;
+      justify-content: center; } }
 
 .courses-box {
   display: flex;

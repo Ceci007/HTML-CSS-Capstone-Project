@@ -5,6 +5,18 @@
     display: flex;
     padding: 3rem 2rem;
     align-items: flex-end;
+
+    @include respond(desktop) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        @include respond(desktop) {
+            margin-bottom: 2rem;
+        }
+    }
     
     &__item:not(:last-of-type) {
         margin-right: 3.5rem;
@@ -16,6 +28,9 @@
     }
     &__input {
         border: none;
+        @include respond(desktop) {
+            width: 19rem;
+        }
         background-color: white;
         border-radius: 5px;
         padding: 1rem 2rem;
@@ -55,6 +70,11 @@
     }
 }
 
+.buttons-box {
+    display: flex;
+    justify-content: center;
+}
+
 .search-button:link, .search-button:visited {
     text-decoration: none;
     font-size: 1.4rem;
@@ -64,7 +84,12 @@
     font-weight: 600;
     border-radius: 4px;
     display: flex;
+    justify-content: center;
     align-self: center;
+
+    & i {
+        margin-right: 1rem;
+    }
 }
 
 .color--1 {
@@ -73,4 +98,16 @@
 
 .color--2 {
     background-color: var(--color-secondary);
+    width: 16rem;
+}
+
+.items-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    @include respond(desktop) {
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
 }
