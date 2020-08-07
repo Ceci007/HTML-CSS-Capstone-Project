@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy - Find the right course for you</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d6ecfbd70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="../img/logo.png" alt="logo" >
+            </div>
+            <nav class="navbar-nav">
+                <div class="navbar-nav__toggle">
+                    <button class="toggle">
+                        <input type="checkbox" class="toggle__checkbox" id="nav-toggle" />
+                        <label for="nav-toggle" class="toggle__button">
+                            <span class="toggle__icon" ></span>
+                        </label>
+                        <div class="toggle__background" ></div>
+                        <nav class="toggle__nav">
+                            <a href="../index.html" class="navbar-nav__link"><div class="toggle__link">home</div></a>
+                            <a href="./search-results.html" class="navbar-nav__link"><div class="toggle__link"><i class="fas fa-search"></i> Courses</div></a>
+                            <a href="./contact.html" class="navbar-nav__link"><div class="toggle__link">contact</div></a>
+                            <a href="./login.html" class="navbar-nav__link"><div class="toggle__link">Login</div></a>
+                        </nav>
+                    </button>
+                </div>
+                <a href="../index.html" class="navbar-nav__link">
+                    <div class="navbar-nav__nav-item">
+                        home
+                    </div>
+                </a>
+                <a href="./search-results.html" class="navbar-nav__link">
+                    <div class="navbar-nav__nav-item">
+                        <i class="fas fa-search"></i> Courses
+                    </div>
+                </a>
+                <a href="./contact.html" class="navbar-nav__link">
+                    <div class="navbar-nav__nav-item">
+                        contact
+                    </div>
+                </a>
+                <a href="./login.html" class="navbar-nav__link">
+                    <div class="navbar-nav__nav-item">
+                        login
+                    </div>
+                </a>
+            </nav>
+        </div>
+        <!-- Search Form -->
+        <form class="form">
+            <div class="form__item">
+                <h4>Course Name:</h4>
+                <input type="text" class="form__input">
+            </div>
+            <div class="form__item">
+                <h4>Country:</h4>
+                <div class="select__wrap">
+                    <ul class="select__default-option">
+                        <li>
+                            <div class="select__country--1">
+                                <p>Paraguay</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form__item">
+                <h4>Language:</h4>
+                <div class="select__wrap">
+                    <ul class="select__default-option">
+                        <li>
+                            <div class="select__country--1">
+                                <p>English</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form__item">
+                <a href="#" class="search-button color--1">Search</a>
+            </div>
+            <div class="form__item">
+                <a href="#" class="search-button color--2"><i class="fas fa-broom"></i> Clear Filter</a>
+            </div>
+        </form>
+        <!-- Courses Results -->
+        <section class="courses-box">
+            <h3 class="steps__title">Search Results</h3>
+            <div class="courses">
+                <div class="courses__card">
+                    <div class="courses__img-box">
+                        <img src="../img/course-1.png">
+                    </div>
+                    <div class="courses__body">
+                        <h3>JavaScript</h3>
+                        <p class="name">Jane Doe</p>
+                        <div class="courses__rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          4.8
+                        </div>
+                        <p class="price">$15.99</p>
+                      </div>
+                </div>
+
+                <div class="courses__card">
+                    <div class="courses__img-box">
+                        <img src="../img/course-2.jpeg">
+                    </div>
+                    <div class="courses__body">
+                        <h3>Node.Js</h3>
+                        <p class="name">Karen Gomez</p>
+                        <div class="courses__rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          4.9
+                        </div>
+                        <p class="price">$25.99</p>
+                      </div>
+                </div>
+
+                <div class="courses__card">
+                    <div class="courses__img-box">
+                        <img src="../img/course-3.jpg">
+                    </div>
+                    <div class="courses__body">
+                        <h3>Advanced CSS</h3>
+                        <p class="name">John Martinez</p>
+                        <div class="courses__rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          5
+                        </div>
+                        <p class="price">$10.99</p>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer__top">
+                <nav class="footer__nav--1">
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link">Search</a>
+                    <a href="#" class="footer__link">About Us</a>
+                    <a href="#" class="footer__link">Advertise</a>
+                </nav>
+                <div class="footer__nav--circle">
+                    <i class="far fa-compass"></i>
+                </div>
+                <nav class="footer__nav--2">
+                    <a href="#" class="footer__link">Facebook</a>
+                    <a href="#" class="footer__link">Twitter</a>
+                    <a href="#" class="footer__link">Blog</a>
+                    <a href="#" class="footer__link">Google+</a>
+                </nav>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__grid--1">
+                    <h4>Subscribe</h4>
+                    <div class="footer__input-box">
+                        <input type="text" placeholder="Enter your email" class="footer__input-box__input">
+                        <a href="#" class="footer__input-box__input-btn">Send</a>
+                    </div>
+                </div>
+                <div class="footer__grid--2">
+                    <h4>Contact</h4>
+                    <p>this is our page contact info</p>
+                    <p><span>email_academy@gmail.com</span></p>
+                </div>
+                <div class="footer__grid--3">
+                    <h4>About</h4>
+                    <p>You can start a career any time you want, doing our courses in your schedule, this is very flexible.
+                        We also have <span>online bootcamps</span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__icons">
+                    <i class="fab fa-facebook-f margin-right"></i>
+                    <i class="fab fa-twitter margin-right"></i>
+                    <i class="fab fa-pinterest-p margin-right"></i>
+                    <i class="fab fa-linkedin-in margin-right"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="footer__copy">
+                    <p>&copy; 2020 by Cecilia Benitez, <span>for a better web</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
