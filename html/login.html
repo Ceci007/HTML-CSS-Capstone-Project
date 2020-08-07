@@ -54,25 +54,27 @@
             </nav>
         </div>
         <!-- Login -->
-        <div class="sign-up-login-box">
-            <div class="button">
-                <div id="btn"></div>
-                <button type="button" class="button__toggle" onclick="login()">Log In</button>
-                <button type="button" class="button__toggle" onclick="register()">Register</button>
+        <div class="hero">
+            <div class="sign-up-login-box">
+                <div class="button">
+                    <div id="btn"></div>
+                    <button type="button" class="button__toggle" onclick="login()">Log In</button>
+                    <button type="button" class="button__toggle" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-group__field" placeholder="Username" required>
+                    <input type="password" class="input-group__field" placeholder="Password" required>
+                    <input type="checkbox" class="input-group__checkbox"><span>Remember password</span>
+                    <button type="submit" class="input-group__btn">Login</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-group__field" placeholder="Username" required>
+                    <input type="email" class="input-group__field" placeholder="Email" required>
+                    <input type="password" class="input-group__field" placeholder="Password" required>
+                    <input type="checkbox" class="input-group__checkbox"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="input-group__btn">Register</button>
+                </form>
             </div>
-            <form id="login" class="input-group">
-                <input type="text" class="input-group__field" placeholder="Username" required>
-                <input type="password" class="input-group__field" placeholder="Password" required>
-                <input type="checkbox" class="input-group__checkbox"><span>Remember password</span>
-                <button type="submit" class="input-group__btn">Login</button>
-            </form>
-            <form id="register" class="input-group">
-                <input type="text" class="input-group__field" placeholder="Username" required>
-                <input type="email" class="input-group__field" placeholder="Email" required>
-                <input type="password" class="input-group__field" placeholder="Password" required>
-                <input type="checkbox" class="input-group__checkbox"><span>I agree to the terms & conditions</span>
-                <button type="submit" class="input-group__btn">Register</button>
-            </form>
         </div>
         <!-- Footer Section -->
         <footer class="footer">
@@ -135,14 +137,14 @@
         var z = document.getElementById("btn");
 
         function register() {
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
+            x.style.left = "-40rem";
+            y.style.left = "5rem";
+            z.style.left = "12.5rem";
         }
 
         function login() {
-            x.style.left = "50px";
-            y.style.left = "450px";
+            x.style.left = "5rem";
+            y.style.left = "45rem";
             z.style.left = "0";
         }
     </script>
