@@ -1,3 +1,8 @@
+/*
+$bp-large: 64em;                    // 1024px
+$bp-medium: 48em;                     // 768px
+$bp-small: 31.25em;                 // 500px
+*/
 :root {
   --color-primary: #4486f6;
   --color-primary-dark: #44f6ed;
@@ -13,6 +18,12 @@
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999; }
 
+/* ------------ Media Query Manager --------------- */
+/*
+$bp-large: 64em;                    // 1024px
+$bp-medium: 48em;                     // 768px
+$bp-small: 31.25em;                 // 500px
+*/
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -58,6 +69,9 @@ body {
 
 .margin-right {
   margin-right: 2rem; }
+
+.margin-bottom-big {
+  margin-bottom: 5rem !important; }
 
 .navbar {
   position: fixed;
@@ -765,8 +779,7 @@ body {
   height: 100%;
   background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
   border-radius: 3rem;
-  transition: 0.5s;
-  color: white; }
+  transition: 0.5s; }
 
 .input-group {
   position: absolute;
@@ -803,6 +816,17 @@ body {
 
 #register {
   left: 45rem; }
+
+.map-box {
+  margin-top: 10.5rem;
+  margin-bottom: 3rem;
+  padding: 5rem; }
+
+.map-iframe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto; }
 
 /*
 @import "components/buttons";

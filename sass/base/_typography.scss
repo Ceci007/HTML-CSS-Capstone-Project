@@ -10,12 +10,12 @@ $bp-small: 31.25em;                 // 500px
     font-family: inherit;
     font-weight: 100;
 
-    @media only screen and (max-width: $bp-medium) {
+    @include respond(tablet-max) {
         font-size: 3rem;
         text-align: center;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @include respond(phone) {
         font-size: 2rem;
     }
 }
@@ -26,7 +26,7 @@ $bp-small: 31.25em;                 // 500px
     color: var(--color-primary);
     font-weight: 700;
 
-    @media only screen and (max-width: $bp-medium) {
+    @include respond(tablet-max) {
         text-align: center;
     }
 }

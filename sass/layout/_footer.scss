@@ -5,13 +5,13 @@
         padding: 4rem 2rem;
         justify-content: center;
 
-        @media only screen and (max-width: $bp-medium) {
+        @include respond(tablet-max) {
             flex-direction: column;
             align-items: center;
         }
     }
     &__nav--1 {
-        @media only screen and (max-width: $bp-medium) {
+        @include respond(tablet-max) {
             margin-bottom: 2rem;
         }
     }
@@ -47,7 +47,7 @@
         border: 2px solid rgba(white, 0.6);
         padding: 1rem;
 
-        @media only screen and (max-width: $bp-medium) {
+        @include respond(tablet-max) {
             display: none;
         }
 
@@ -67,14 +67,14 @@
         justify-content: center;
         justify-items: center;
 
-        @media only screen and (max-width: $bp-large) {
+        @include respond(desktop) {
             display: grid;
             grid-template-columns: 2fr;
             grid-template-rows: repeat(2, min-content);
             grid-gap: 3rem;
         }
 
-        @media only screen and (max-width: $bp-medium) {
+        @include respond(tablet-max) {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, min-content);
@@ -102,12 +102,12 @@
             grid-column: 1 / 2;
             grid-row: 1 / 2;
 
-            @media only screen and (max-width: $bp-large) {
+            @include respond(desktop) {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
             }
 
-            @media only screen and (max-width: $bp-medium) {
+            @include respond(tablet-max) {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
                 padding: 2rem 0;
@@ -117,12 +117,12 @@
             grid-column: 2 / 3;
             grid-row: 1 / 2;
 
-            @media only screen and (max-width: $bp-large) {
+            @include respond(desktop) {
                 grid-column: 2 / 3;
                 grid-row: 1 / 2;
             }
 
-            @media only screen and (max-width: $bp-medium) {
+            @include respond(tablet-max) {
                 grid-column: 1 / 2;
                 grid-row: 2 / 3;
                 padding: 2rem 0;
@@ -132,12 +132,12 @@
             grid-column: 3 / 4;
             grid-row: 1 / 2;
 
-            @media only screen and (max-width: $bp-large) {
+            @include respond(desktop) {
                 grid-column: 1 / 3;
                 grid-row: 2 / 3;
             }
 
-            @media only screen and (max-width: $bp-medium) {
+            @include respond(tablet-max) {
                 grid-column: 1 / 2;
                 grid-row: 3 / 4;
                 padding: 2rem 0;
@@ -189,7 +189,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media only screen and (max-width: $bp-medium) {
+        @include respond(tablet-max) {
             flex-direction: column;
             align-items: center;
             padding: 2rem 1rem;
@@ -199,7 +199,7 @@
         font-size: 2rem;
         color: rgba(white, 0.8);
 
-        @media only screen and (max-width: $bp-medium) {
+        @include respond(tablet-max) {
             margin-bottom: 2rem;
         }
     }
