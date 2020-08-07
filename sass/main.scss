@@ -1,15 +1,10 @@
 @import "abstract/variables";
 @import "abstract/mixins";
-
-@import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utils";
-
-@import "layout/containers";
 @import "layout/navigation";
 @import "layout/footer";
-
 @import "components/header";
 @import "components/steps";
 @import "components/features";

@@ -3,30 +3,30 @@ $bp-medium: 48em;                     // 768px
 $bp-small: 31.25em;                 // 500px
 
 .heading-1 {
-    font-size: 4.5rem;
-    color: #fff;
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-family: inherit;
+  font-weight: 100;
+
+  @include respond(tablet-max) {
+    font-size: 3rem;
     text-align: center;
-    line-height: 1;
-    font-family: inherit;
-    font-weight: 100;
+  }
 
-    @include respond(tablet-max) {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    @include respond(phone) {
-        font-size: 2rem;
-    }
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 
 .heading-3 {
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    color: var(--color-primary);
-    font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  font-weight: 700;
 
-    @include respond(tablet-max) {
-        text-align: center;
-    }
+  @include respond(tablet-max) {
+    text-align: center;
+  }
 }
