@@ -107,7 +107,10 @@
     flex-wrap: wrap;
     
     @include respond(desktop) {
+        flex-direction: column;
         margin-bottom: 2rem;
         justify-content: center;
+        align-items: center;
+        flex-wrap: initial;
     }
 }
