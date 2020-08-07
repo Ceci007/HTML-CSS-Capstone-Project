@@ -18,7 +18,7 @@ of Sass a CSS preprocessor (.scss extension).
 
 ## 🔴 Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://raw.githack.com/Ceci007/HTML-CSS-Capstone-Project/feature-branch/index.html)
 
 
 ## 🛠 Getting Started
@@ -41,7 +41,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/Ceci007/HTML-CSS-Capstone-Project/issues).
 
 ## 📝 License
 
