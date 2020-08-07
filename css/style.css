@@ -138,10 +138,8 @@ body {
   border: none;
   padding: 0;
   box-sizing: border-box;
-  z-index: 400;
-  cursor: pointer; }
+  z-index: 400; }
   .toggle > * {
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -227,6 +225,11 @@ body {
   .toggle__checkbox:checked ~ .toggle__button .toggle__icon:after {
     top: 0;
     transform: rotate(-135deg); }
+
+@media only screen and (max-width: 48em) {
+  .cursor-none {
+    cursor: auto;
+    text-decoration: none; } }
 
 .footer__top {
   background-color: black;
@@ -869,18 +872,3 @@ body {
   display: flex;
   justify-content: center;
   margin: 1rem auto; }
-
-/*
-@import "components/buttons";
-@import "components/description";
-@import "components/main-flex";
-@import "components/reviews";
-@import "components/sidenavigation";
-@import "components/header";
-@import "components/fixed-image";
-@import "components/cards";
-@import "components/features";
-@import "components/gallery";
-@import "components/footer";
-@import "components/scrollbar";
-*/
