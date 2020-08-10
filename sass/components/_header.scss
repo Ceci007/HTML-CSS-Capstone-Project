@@ -1,0 +1,100 @@
+.header-box {
+  display: grid;
+  grid-template-rows: 100vh;
+  max-width: 100%;
+  width: 100%;
+
+  @include respond(tablet-max) {
+    display: grid;
+    grid-template-rows: 80vh;
+  }
+
+  @include respond(phone) {
+    display: grid;
+    grid-template-rows: 60vh;
+  }
+}
+
+.header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://github.com/Ceci007/image-repository/blob/master/img/header-bg.jpg?raw=true");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+  position: relative;
+  margin-top: 7.5rem;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-right: 2.25rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3rem;
+
+  &__input {
+    color: var(--color-grey-dark-1);
+    background-color: var(--color-grey-light-2);
+    margin-right: -5rem;
+
+    @include respond(phone) {
+      width: 35rem;
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--color-grey-dark-1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: var(--color-primary);
+    padding: 1.3rem 0;
+    padding-right: 2.5rem;
+    border-left: 2px solid var(--color-secondary);
+    cursor: pointer;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(0.2rem);
+    }
+
+    & i {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__input:focus ~ &__button {
+    background-color: var(--color-secondary);
+  }
+}

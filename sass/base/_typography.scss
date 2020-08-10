@@ -1,0 +1,50 @@
+$bp-large: 64em;                    // 1024px
+$bp-medium: 48em;                     // 768px
+$bp-small: 31.25em;                 // 500px
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @include respond(tablet-max) {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
+.heading-3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  font-weight: 700;
+
+  @include respond(tablet-max) {
+    text-align: center;
+  }
+}
+
+.placeholder {
+  font-family: inherit;
+  font-size: 1.7rem;
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 0.4rem;
+  box-shadow: var(--shadow-dark);
+  width: 100%;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.placeholder::-webkit-input-placeholder {
+  font-family: inherit;
+  font-weight: 100;
+}
