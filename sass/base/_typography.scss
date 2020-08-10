@@ -8,7 +8,8 @@ $bp-small: 31.25em;                 // 500px
   text-align: center;
   line-height: 1;
   font-family: inherit;
-  font-weight: 100;
+  font-weight: 600;
+  text-transform: uppercase;
 
   @include respond(tablet-max) {
     font-size: 3rem;
@@ -29,4 +30,21 @@ $bp-small: 31.25em;                 // 500px
   @include respond(tablet-max) {
     text-align: center;
   }
+}
+
+.placeholder {
+  font-family: inherit;
+  font-size: 1.7rem;
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 0.4rem;
+  box-shadow: var(--shadow-dark);
+  width: 100%;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.placeholder::-webkit-input-placeholder {
+  font-family: inherit;
+  font-weight: 100;
 }

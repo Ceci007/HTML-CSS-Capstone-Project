@@ -172,19 +172,10 @@
     margin-right: 2.25rem;
 
     &__input {
-      font-family: inherit;
-      font-size: 1.7rem;
       color: var(--color-grey-dark-1);
       background-color: rgba(255, 255, 255, 0.1);
-      border: none;
-      padding: 1.5rem 2rem;
-      border-radius: 0.4rem;
-      box-shadow: var(--shadow-dark);
-      transition: all 0.3s;
-      margin-right: -6.5rem;
 
       &::-webkit-input-placeholder {
-        font-weight: 100;
         color: rgba(255, 255, 255, 0.6);
       }
 

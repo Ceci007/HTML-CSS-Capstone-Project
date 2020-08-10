@@ -1,18 +1,18 @@
 .navbar {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-grey-light-1);
+  background-color: var(--color-primary);
   height: 7.5rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 100;
 
   &__logo {
-    padding-left: 1rem;
+    padding-left: 2rem;
     width: 6rem;
 
     & img {
@@ -29,10 +29,11 @@
   align-items: center;
   align-self: stretch;
   text-transform: uppercase;
+  padding-right: 2rem;
 
   @include respond(tablet-min) {
     & > * {
-      padding: 0 2rem !important;
+      padding: 0 2rem;
       cursor: pointer;
       height: 100%;
       display: flex;
@@ -41,7 +42,7 @@
     }
 
     & > *:hover {
-      background-color: var(--color-grey-light-2);
+      background-color: var(--color-secondary);
     }
   }
 
@@ -64,7 +65,7 @@
   &__link {
     &:link,
     &:visited {
-      color: var(--color-grey-dark-2);
+      color: rgba(255, 255, 255, 0.8);
       text-decoration: none;
     }
   }
@@ -154,7 +155,7 @@
         );
       z-index: 400;
       width: 30rem;
-      color: var(--color-grey-light-1) !important;
+      color: var(--color-grey-light-1);
     }
   }
 
@@ -186,7 +187,7 @@
     &::after {
       width: 3rem;
       height: 2px;
-      background-color: var(--color-grey-dark-2);
+      background-color: #fff;
       display: inline-block;
     }
 

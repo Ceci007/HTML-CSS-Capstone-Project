@@ -1,7 +1,7 @@
 #  🧐 Directory of Schools
 
 This is the HTML and CSS capstone (solo project) from the Microverse program, It's a complete responsive layout adaptation of "Directory of Schools" in my case is a page about boot camps and online courses called "Academy", it's built on HTML and CSS3 languages with the help 
-of Sass a CSS preprocessor (.scss extension).
+of SASS a CSS preprocessor (.scss extension).
 
 ![screenshot_desktop](./img/app/app_screenshot_desktop.png)
 ![screenshot_tablet](./img/app/app_screenshot_tablet.png)

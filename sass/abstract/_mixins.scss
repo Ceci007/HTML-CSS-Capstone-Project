@@ -1,11 +1,5 @@
 /* ------------ Media Query Manager --------------- */
 
-/*
-$bp-large: 64em;                    // 1024px
-$bp-medium: 48em;                     // 768px
-$bp-small: 31.25em;                 // 500px
-*/
-
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 31.25em) {
@@ -14,7 +8,7 @@ $bp-small: 31.25em;                 // 500px
   }
 
   @if $breakpoint == tablet-max {
-    @media only screen and (max-width: 48em) {
+    @media only screen and (max-width: 47.938em) {
       @content;
     }
   }
@@ -27,6 +21,12 @@ $bp-small: 31.25em;                 // 500px
 
   @if $breakpoint == desktop {
     @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop-min {
+    @media only screen and (min-width: 64.063em) {
       @content;
     }
   }
